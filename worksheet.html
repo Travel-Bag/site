@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>旅行先追加</title>
+<link rel="stylesheet" href="worksheet.css">
+</head>
+<body>
+
+<form method="post" action="">
+<div class="item">
+<label for="name">観光場所:</label>
+<input type="text" id="name" name="user_name">
+</div>
+
+<div class=”item”>
+<label class="label">行った場所の住所</label>
+<input class="inputs" type="text" name="address" value="">
+</div>
+
+<br>
+
+<div class="item">
+<dt>交通機関</dt>
+<dd>
+	<select name="item">
+  	<option value="" selected>選択してください</option>
+    <option value="">自動車</option>
+    <option value="">バス</option>
+    <option value="">自転車</option>
+    <option value="">その他</option>
+   </select>
+</dd>
+</div>
+
+<br>
+
+<div class="item">
+<dt class="label">旅行先の評価</dt>
+<dd><input type="radio" name="evelute" value="satisfy">満足している</dd>
+<dd><input type="radio" name="evelute" value="unsatisfy">不満である</dd>
+<dd><input type="radio" name="evelute" value="none">どちらでもない</dd>
+</div>
+
+<br>
+
+<div class="item">
+<label for="msg">コメント:</label>
+<textarea id="msg" name="user_message"></textarea>
+</div>    
+    
+<input type="submit" name="btn_confirm" value="入力内容を確認する">
+
+
+</form>
+</body>
+</html>
