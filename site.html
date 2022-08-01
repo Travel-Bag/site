@@ -2,18 +2,84 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://travel-bag.github.io/site/site.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="harutravel">
+  <title>ハルトラベル</title>
+  <link rel="stylesheet" href="css/sub.css">
+  <link rel="stylesheet" href="css/site.css">
 </head>
-<body>
-    <h1>ハルトラベル</h1>
-    <p1>立命館大学生向けのサイトです！！遊び場所を探している人、デートスポットをどこにしようか迷っている人、立命館大学近くの秘境を紹介してます。</p1>
-  　
-  　<form action="cgi-bin/example.cgi" method="post">
-    <input type="search" name="search" placeholder="キーワードを入力">
-    <input type="submit" name="submit" value="検索">
-    </form>
+<body id="home">
+
+  <header id="top">
+    <div class="header_content wrapper">
+      <h1>ハルトラベル</h1>
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li id="good"><a href="">いいね</a></li>
+          <li id="ranking"><a href="">ランキング</a></li>
+          <!--- 検索欄もここに足してください　-->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="contents wrapper">
+
+    <main id="main_content">
+      <section id="info">
+        <h2 id="introduction">紹介</h2>
+        <p>どうもー！とある大学生です。このサイトでは。。。</p>
+      </section>
+      <section id="campaign">
+      <h2>おすすめスポット(関西)</h2>
+      <!--- 横スクロールでおすすめスポットを見せる　-->
+      </section>
+    </main>
+
+    
+
+    <aside id="sidebar">
+      <ul>
+        <li>
+          <a href="#">
+            <img src="images/IMG_3869.JPG" alt="夏のおすすめスポットはここ！">
+          </a>
+        </li>
+      </ul>
+      <h2 id="genre">ジャンル</h2>
+      <ul class="genre">
+        <li><a href="">大阪　</a></li>
+        <li><a href="">京都　</a></li>
+        <li><a href="">兵庫　</a></li>
+        <li><a href="">滋賀　</a></li>
+        <li><a href="">和歌山　</a></li>
+        <li><a href="">海　</a></li>
+        <li><a href="">山　</a></li>
+        <li><a href="">川　</a></li>
+        <li><a href="">釣り　</a></li>
+        <li><a href="">デート　</a></li>
+        <li><a href="">グルメ　</a></li>
+        <li><a href="">スイーツ　</a></li>
+        <li><a href="">春　</a></li>
+        <li><a href="">夏　</a></li>
+        <li><a href="">秋　</a></li>
+        <li><a href="">冬　</a></li>
+      </ul>
+      <h2 id="Form">情報提供フォーム</h2>
+    </aside>
+  </div>
+
+  <footer>
+    <ul>
+      <li><a href="site.html">ホーム</a></li>
+      <li><a href="#good">いいね</a></li>
+      <li><a href="#ranking">ランキング</a></li>
+      <li><a href="#introduction">会社情報</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+    <small>&copy; 2022 おバカ情報系グループ　ハルトラベル</small>
+  </footer>
+
 </body>
 </html>
