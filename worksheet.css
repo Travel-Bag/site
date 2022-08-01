@@ -42,11 +42,11 @@ input[name=btn_back] {
 	background: #999;
 }
 
-.element_wrap {
+.item {
 	margin-bottom: 10px;
 	padding: 10px 0;
 	border-bottom: 1px solid #ccc;
-	text-align: left;
+	text-align: middle;
 }
 
 label {
@@ -56,8 +56,8 @@ label {
 	width: 150px;
 }
 
-.element_wrap p {
+.item p {
 	display: inline-block;
 	margin:  0;
-	text-align: left;
+	text-align: middle;
 }
