@@ -81,6 +81,16 @@ input[name=btn_back] {
 	background: #999;
 }
 
+.item {
+	margin-bottom: 10px;
+	padding: 10px 0;
+}
+
+.item p {
+	display: inline-block;
+	margin:  0;
+}
+
 .stars span{
   display: flex;               /* 要素をフレックスボックスにする */
   flex-direction: row-reverse; /* 星を逆順に並べる */
@@ -102,16 +112,6 @@ input[name=btn_back] {
 .stars label:hover ~ label,
 .stars input[type='radio']:checked ~ label{
   color: #F8C601;              /* 選択された星以降をすべて黄色にする */
-}
-
-.item {
-	margin-bottom: 10px;
-	padding: 10px 0;
-}
-
-.item p {
-	display: inline-block;
-	margin:  0;
 }
 
 label {
