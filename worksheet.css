@@ -50,6 +50,11 @@ h1 {
 	border-bottom: 1px solid #999;
 }
 
+h2 {
+	font-size: 200%;
+	padding: 25px
+}
+
 div {	text-align: center;}
 
 input[type=text] {
