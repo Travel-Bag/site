@@ -42,16 +42,7 @@ body {
 }
 
 h1 {
-	margin-bottom: 20px;
-	padding: 20px 0;
-	color: #209eff;
-	font-size: 122%;
-	border-top: 1px solid #999;
-	border-bottom: 1px solid #999;
-}
-
-h2 {
-	font-size: 200%;
+	font-size: 300%;
 	padding: 25px
 }
 
