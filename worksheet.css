@@ -1,8 +1,44 @@
 @charset "UTF-8";
 
+header {
+  border-top: 8px solid #3c398c;
+}
+
+.header_logo {
+  width: 90px;
+}
+
+.header_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 30px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #555;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active,
+header nav ul li.current a {
+  color: #8c6239;
+}
+
 body {
-	padding: 20px;
-	text-align: center;
+  font-family: "Hiragino Kaku Gothic proN", "メイリオ", sans-serif;
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  margin: 0%;
 }
 
 h1 {
@@ -13,6 +49,8 @@ h1 {
 	border-top: 1px solid #999;
 	border-bottom: 1px solid #999;
 }
+
+div {	text-align: center;}
 
 input[type=text] {
 	padding: 5px 10px;
@@ -36,6 +74,7 @@ input[name=btn_back] {
 	background: #4eaaf1;
 }
 
+
 input[name=btn_back] {
 	margin-right: 20px;
 	box-shadow: 0 3px 0 #777;
@@ -45,8 +84,11 @@ input[name=btn_back] {
 .item {
 	margin-bottom: 10px;
 	padding: 10px 0;
-	border-bottom: 1px solid #ccc;
-	text-align: middle;
+}
+
+.item p {
+	display: inline-block;
+	margin:  0;
 }
 
 label {
@@ -56,8 +98,33 @@ label {
 	width: 150px;
 }
 
-.item p {
-	display: inline-block;
-	margin:  0;
-	text-align: middle;
+footer {
+  margin-top: 100px;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #382c93;
+}
+
+footer ul {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 5px;
+}
+
+footer ul li a {
+  color: #fff;
+}
+
+footer ul li a:link {
+  text-decoration: none;
+}
+
+footer ul li a:hover,
+footer ul li a:active {
+  opacity: .7;
 }
