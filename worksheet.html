@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>旅行先追加</title>
-<link rel="stylesheet" href="https://travel-bag.github.io/site/worksheet.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="harutravel">
+  <title>ハルトラベル</title>
+  <link rel="stylesheet" href="https://travel-bag.github.io/site/sub.css">
+  <link rel="stylesheet" href="https://travel-bag.github.io/site/site.css">
+<link rel="stylesheet" href="worksheet.css">
 </head>
 <body>
+
+  <header id="top">
+    <div class="header_content wrapper">
+      <h1>ハルトラベル</h1>
+      <nav>
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li id="good"><a href="">いいね</a></li>
+          <li id="ranking"><a href="">ランキング</a></li>
+          <li id="search"><form action = "https://travel-bag.github.io/site/site.html" method="get">
+          <input type="search" name="search" placeholder="キーワードを入力">
+          <input type="submit" name="submit" value="検索"></form></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
 <form method="post" action="">
 <div class="item">
@@ -47,8 +67,18 @@
 </div>    
     
 <input type="submit" name="btn_confirm" value="入力内容を確認する">
-
-
 </form>
+
+<footer>
+    <ul>
+      <li><a href="site.html">ホーム</a></li>
+      <li><a href="#good">いいね</a></li>
+      <li><a href="#ranking">ランキング</a></li>
+      <li><a href="#introduction">会社情報</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+    <small>&copy; 2022 おバカ情報系グループ　ハルトラベル</small>
+</footer>
+  
 </body>
 </html>
