@@ -19,7 +19,7 @@
           <li class="current"><a href="https://travel-bag.github.io/site/site.html">Home</a></li>
           <li id="good"><a href="">いいね</a></li>
           <li id="ranking"><a href="">ランキング</a></li>
-	<li id="form"><a href="https://travel-bag.github.io/site/worksheet.html">情報提供フォーム</a></li>
+          <li id="form"><a href="https://travel-bag.github.io/site/worksheet.html">情報提供フォーム</a></li>
           <li id="search"><form action = "https://travel-bag.github.io/site/site.html" method="get">
           <input type="search" name="search" placeholder="キーワードを入力">
           <input type="submit" name="submit" value="検索"></form></li>
@@ -28,21 +28,20 @@
     </div>
   </header>
 
+
 <form method="post" action="">
 <div class="item">
 <label for="name">観光場所:</label>
-<input type="text" id="name" name="user_name">
-</div>
+<input type="text" type="text" name="name" required>
 
-<div class="item">
-<label class="label">行った場所の住所</label>
-<input class="inputs" type="text" name="address" value="">
-</div>
+<br>
 
+<label class="label">アクセスアドレス:</label>
+<input class="imput" type="text" name="address" value="" required>
 
-<div class="item">
-<dt>交通機関</dt>
-<dd>
+<br>
+
+<label>交通機関:</label>
 	<select name="item">
   	<option value="" selected>選択してください</option>
     <option value="">自動車</option>
@@ -50,12 +49,10 @@
     <option value="">自転車</option>
     <option value="">その他</option>
    </select>
-</dd>
 </div>
 
-
 <div class="review">
-  <p>旅行先の評価</p>
+  <label>旅行先の評価:</label>
   <div class="stars">
     <span>
       <input id="review01" type="radio" name="review"><label for="review01">★</label>
@@ -72,7 +69,7 @@
 <label for="msg">コメント:</label>
 <textarea id="msg" name="user_message"></textarea>
 </div>    
-
+    
 <div align="center" class="example">
 <input type="submit" name="btn_confirm" value="入力内容を確認する">
 </div>
@@ -88,6 +85,6 @@
     </ul>
     <small>&copy; 2022 おバカ情報系グループ　ハルトラベル</small>
 </footer>
-  
+
 </body>
 </html>
