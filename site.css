@@ -11,6 +11,7 @@ html {
 
 body {
   font-family: "Hiragino Kaku Gothic proN", "メイリオ", sans-serif;
+  background-image: url(keyvisual_bg_01.jpeg);
   color: rgb(0, 0, 0);
   line-height: 1.5;
   margin: 0%;
