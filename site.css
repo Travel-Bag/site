@@ -5,6 +5,10 @@ html {
   font-size: 100%;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Hiragino Kaku Gothic proN", "メイリオ", sans-serif;
   color: rgb(0, 0, 0);
@@ -17,10 +21,11 @@ img {
 }
 
 .wrapper {
-  margin: 0;
+  margin: 0px;
   border: 0ch;
-  padding: 0 10px;
+  padding: 10px;
 }
+
 
 /* header */
 header {
@@ -36,6 +41,13 @@ header {
   align-items: center;
   justify-content: space-between;
   margin: 10px auto;
+}
+
+.header_content h1{
+  background-image: url('keyvisual_bg_01.jpeg');
+  background-position: center -437px;
+  padding: 50px 200px 50px 50px;
+  font-family: serif;
 }
 
 header nav ul {
@@ -60,7 +72,7 @@ header nav ul li.current a {
 #main_image {
   width: 100%;
   height: 50vh;
-  background-image: url(../images/IMG_7983.JPG);
+  background-image: url(keyvisual_bg_01.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -69,20 +81,18 @@ header nav ul li.current a {
 /* contents */
 
 .contents {
+  max-width: 1200px;
+  margin: 90px auto 90px auto;
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
 }
 
+
 #main_content {
   width: 70%;
 }
 
-aside {
-  margin: 0%;
-  border: 0ch;
-  padding: auto;
-}
 
 #sidebar {
   width: 30%;
@@ -92,7 +102,7 @@ aside {
 
 .genre ul li {
   margin-bottom: 20px;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 
 .genre ul li {
@@ -108,16 +118,25 @@ aside {
   text-decoration: none;
 }
 
-.genre ul li a:hover,
-.genre ul li a:active {
-  opacity: .7;
+.genre ul li a:visited{
+  text-decoration: none;
 }
 
-#home h2 {
-  margin-bottom: 20px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #0a0907;
-  font-size: 1.2rem;
+.genre ul li a:hover {
+  text-decoration: underline;
+}
+
+.genre ul li a:active {
+  text-decoration: underline;
+}
+
+
+#info h2, #campaign h2{
+  margin: 60px 0 20px 0;
+  border-bottom: 2px solid #3c398c;
+  padding: 0 0 5px 0;
+  color: #3c398c;
+  font-size: 1.3rem;
 }
 
 #info dl {
@@ -144,6 +163,19 @@ aside {
   list-style-type: none;
 }
 
+#sidebar{
+  padding-left: 10px;
+  margin-left: 30px;
+}
+
+#sidebar h2{
+  margin: 60px 0 20px 0;
+  border-bottom: 2px solid #3c398c;
+  padding: 0 0 5px 0;
+  color: black;
+  font-size: 1.3rem;
+}
+
 #sidebar ul li {
   margin-bottom: 20px;
   list-style-type: none;
@@ -153,7 +185,7 @@ aside {
 
 footer {
   margin-top: 100px;
-  padding: 30px;
+  padding: 70px;
   text-align: center;
   color: #fff;
   background-color: #382c93;
