@@ -21,12 +21,10 @@ element.style {
     margin: 30px 0 0;
 }
 
-#blog-title-content{
-    background-image: url('keyvisual_bg_01.jpeg');
-    background-position: center -437px;
-}
 
 #blog-title-content h1 h2{
+    background-image: url('keyvisual_bg_01.jpeg');
+    background-position: center -437px;
     color:black;
 }
 
