@@ -22,7 +22,7 @@ element.style {
 }
 
 
-#blog-title-content h1{
+#blog-title-content{
     background-image: url('keyvisual_bg_01.jpeg');
     background-position: center -437px;
     color:black;
