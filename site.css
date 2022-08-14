@@ -47,9 +47,8 @@ header {
 .header_content h1{
   background-image: url('keyvisual_bg_01.jpeg');
   background-position: center -437px;
-  padding: 50px 170px 50px 50px;
+  padding: 50px 200px 50px 50px;
   font-family: HanziPen SC;
-  font-size: 90%
 }
 
 header nav ul {
