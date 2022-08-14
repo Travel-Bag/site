@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: Hannotate SC;
+  font-family: HanziPen SC;
   background-image: url(keyvisual_bg_01.jpeg);
   color: rgb(0, 0, 0);
   line-height: 1.5;
@@ -48,7 +48,7 @@ header {
   background-image: url('keyvisual_bg_01.jpeg');
   background-position: center -437px;
   padding: 50px 200px 50px 50px;
-  font-family: Hannotate SC;
+  font-family: HanziPen SC;
 }
 
 header nav ul {
