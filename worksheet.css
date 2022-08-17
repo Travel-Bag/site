@@ -15,8 +15,10 @@ header {
   margin: 10px auto;
 }
 
+
 header nav ul {
   display: flex;
+  justify-content: right;
 }
 
 header nav ul li {
@@ -34,11 +36,25 @@ header nav ul li.current a {
   color: #8c6239;
 }
 
+.header_form h1{
+  background-image: url('keyvisual_bg_01.jpeg');
+  background-position: center -437px;
+  padding: 50px 100px 50px 50px;
+  font-family: serif;
+  margin: 30px;
+  text-align: center;
+}
+
 body {
-  font-family: "Hiragino Kaku Gothic proN", "メイリオ", sans-serif;
+  font-family: HanziPen SC;
   color: rgb(0, 0, 0);
   line-height: 1.5;
   margin: 0%;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 640px;
 }
 
 h1 {
@@ -46,19 +62,25 @@ h1 {
 	padding: 25px
 }
 
-div {	text-align: center;}
 
-input[type=text] {
-	padding: 5px 10px;
-	font-size: 86%;
+input[type=text], textarea {
+	padding: 6px;
+  width: 100%;
+	font-size: 1rem;
 	border: none;
 	border-radius: 3px;
 	background: #ddf0ff;
 }
 
-input[name=btn_confirm],
-input[name=btn_submit],
-input[name=btn_back] {
+textarea {
+  height: 140px
+}
+
+.submit {
+  text-align: center;
+}
+
+input[name=btn_confirm]{
 	margin-top: 10px;
 	padding: 5px 20px;
 	font-size: 100%;
@@ -77,21 +99,21 @@ input[name=btn_back] {
 	background: #999;
 }
 
-.item {
-	margin-bottom: 10px;
-	padding: 10px 0;
+.item p{
+	margin: 20px;
 }
 
-.item p {
-	display: inline-block;
-	margin:  0;
+
+#cost-travel, #money{
+  justify-content: center;
 }
 
 .stars span{
   display: flex;               /* 要素をフレックスボックスにする */
   flex-direction: row-reverse; /* 星を逆順に並べる */
-  justify-content: center;
+  text-align: center;
 }
+
 
 .stars input[type='radio']{
   display: none;               /* デフォルトのラジオボタンを非表示にする */
