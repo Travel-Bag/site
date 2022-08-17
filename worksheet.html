@@ -7,13 +7,12 @@
   <title>ハルトラベル</title>
   <link rel="stylesheet" href="https://travel-bag.github.io/site/sub.css">
   <link rel="stylesheet" href="https://travel-bag.github.io/site/site.css">
-<link rel="stylesheet" href="https://travel-bag.github.io/site/worksheet.css">
+  <link rel="stylesheet" href="https://travel-bag.github.io/site/worksheet.css">
 </head>
 <body>
 
   <header id="top">
-    <div class="header_content wrapper">
-      <h1>情報提供フォーム</h1>
+    <div class="header_form wrapper">
       <nav>
         <ul>
           <li class="current"><a href="https://travel-bag.github.io/site/site.html">Home</a></li>
@@ -25,54 +24,75 @@
           <input type="submit" name="submit" value="検索"></form></li>
         </ul>
       </nav>
+      <h1>情報提供フォーム</h1>
     </div>
   </header>
 
 
+
 <form method="post" action="">
-<div class="item">
-<label for="name">観光場所:</label>
-<input type="text" type="text" name="name" required>
+  <div class="item">
 
-<br>
+    <p>
+      <label for="place-name">観光場所:</label>
+      <input type="text" name="name" id="place-name" required>
+    </p>
 
-<label class="label">アクセスアドレス:</label>
-<input class="imput" type="text" name="address" value="" required>
+    <p>
+      <label for="label">アクセスアドレス:</label>
+      <input class="imput" type="text" name="address" id="label" value="" required><br>
+    </p>
 
-<br>
+    <p>
+      <label for="item">交通機関：</label><br>
+	    <select name="item" id="item">
+  	    <option value="" selected>選択してください</option>
+        <option value="">自動車</option>
+        <option value="">バス</option>
+        <option value="">自転車</option>
+        <option value="">その他</option>
+      </select>
+    </p>
 
-<label>交通機関:</label>
-	<select name="item">
-  	<option value="" selected>選択してください</option>
-    <option value="">自動車</option>
-    <option value="">バス</option>
-    <option value="">自転車</option>
-    <option value="">その他</option>
-   </select>
-</div>
+  <p>
+    <label for="cost-travel">予算：</label><br>
+    <select name="cost" id="cost-travel">
+      <option value="">選択してください</option>
+      <option value="">0〜1000円</option>
+      <option value="">1000〜3000円</option>
+      <option value="">3000〜5000円</option>
+      <option value="">5000〜10000円</option>
+      <option value="">10000〜30000円</option>
+      <option value="">30000円以上</option>
+    </select>
+  </p>
 
-<div class="review">
-  <label>旅行先の評価:</label>
-  <div class="stars">
-    <span>
-      <input id="review01" type="radio" name="review"><label for="review01">★</label>
-      <input id="review02" type="radio" name="review"><label for="review02">★</label>
-      <input id="review03" type="radio" name="review"><label for="review03">★</label>
-      <input id="review04" type="radio" name="review"><label for="review04">★</label>
-      <input id="review05" type="radio" name="review"><label for="review05">★</label>
-    </span>
   </div>
-</div>
+
+  <div class="review">
+    <label for="stars">旅行先の評価:</label>
+    <div class="stars" id="stars">
+      <span>
+        <input id="review01" type="radio" name="review"><label for="review01">★</label>
+        <input id="review02" type="radio" name="review"><label for="review02">★</label>
+        <input id="review03" type="radio" name="review"><label for="review03">★</label>
+        <input id="review04" type="radio" name="review"><label for="review04">★</label>
+        <input id="review05" type="radio" name="review"><label for="review05">★</label>
+      </span>
+    </div>
+  </div>
 
 
-<div class="item">
-<label for="msg">コメント:</label>
-<textarea id="msg" name="user_message"></textarea>
-</div>    
+  <div class="item">
+    <p>
+      <label for="user-message">コメント:</label><br>
+      <textarea name="user_message" id="user-message" placeholder="詳しい予算、観光する際の注意点など"></textarea>
+    </p>
+  </div>    
     
-<div align="center" class="example">
-<input type="submit" name="btn_confirm" value="入力内容を確認する">
-</div>
+  <p class="submit">
+    <input type="submit" name="btn_confirm" value="入力内容を確認する">
+  </p>
 </form>
 
 <footer>
