@@ -29,10 +29,6 @@ img {
 
 
 /* header */
-header {
-  border-top: 8px solid #3c398c;
-}
-
 .header_logo {
   width: 90px;
 }
