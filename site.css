@@ -215,15 +215,19 @@ small {
   font-size: 0.7rem;
 }
 
-/* responsive */
+/* モバイル対応 */
 
-@media(max-width: 600px) {
+@media(max-width: 767px) {
   html {
     font-size: 87.5%;
   }
 
   .header_logo {
     width: 60px;
+  }
+
+  .header_content nav ul {
+    flex-wrap: wrap;
   }
 
   .contents {
